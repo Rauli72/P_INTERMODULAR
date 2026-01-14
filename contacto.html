@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- METADATOS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/icono_consultora.svg">
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+    <title>Contacto | NovaTech Solutions</title>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <img src="img/logo_consultora.png" alt="Logo de la consultora">
+        <nav>
+            <a href="index.html">Inicio</a>
+            <a href="proyecto-reservas.html">Proyecto</a>
+            <a href="cronologia.html">Cronología</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- INTRODUCCIÓN CONTACTO -->
+        <div class="main-contacto">
+            <h1>Contacta con NovaTech Solutions</h1>
+            <p>Estamos listos para ayudarte a transformar tus ideas en soluciones tecnológicas reales.
+                Rellena el siguiente formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
+            <p>Completa el formulario y nuestro equipo especializado se pondrá en contacto contigo en menos de 24 horas
+                para analizar tu proyecto.</p>
+        </div>
+
+        <!-- CONTENEDOR FORMULARIO E INFO -->
+        <div class="contenedor-contacto">
+            <!-- FORMULARIO DE CONTACTO -->
+            <section class="formulario-contacto">
+                <h2>Envíanos tu Consulta</h2>
+                <form action="morning-paper-a0fc.contry-1990.workers.dev" method="POST" enctype="multipart/form-data">
+
+                    <!-- CAMPO NOMBRE -->
+                    <div class="form-group">
+                        <label for="nombre">Nombre *</label>
+                        <input type="text" name="nombre" id="nombre" required placeholder="Tu nombre">
+                    </div>
+
+                    <!-- CAMPO APELLIDOS -->
+                    <div class="form-group">
+                        <label for="apellidos">Apellidos *</label>
+                        <input type="text" name="apellidos" id="apellidos" required placeholder="Tus apellidos">
+                    </div>
+
+                    <!-- CAMPO EMPRESA -->
+                    <div class="form-group">
+                        <label for="empresa">Empresa</label>
+                        <input type="text" name="empresa" id="empresa" required placeholder="Nombre de tu empresa">
+                    </div>
+
+                    <!-- CAMPO EMAIL -->
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" name="email" id="email" minlength="10" required
+                            placeholder="tucorreo@empresa.com">
+                    </div>
+
+                    <!-- CAMPO TELÉFONO -->
+                    <div class="form-group">
+                        <label for="telefono">Teléfono</label>
+                        <input type="tel" name="telefono" id="telefono" required placeholder="+34 600 000 000">
+                    </div>
+
+                    <!-- SELECT TIPO DE PROYECTO -->
+                    <div class="form-group">
+                        <label for="tipo-proyecto">Tipo de Proyecto *</label>
+                        <select name="tipo-proyecto" id="tipo-proyecto" required>
+                            <option value="" disabled selected>Selecciona una opción</option>
+                            <option value="desarrollo-web">Desarrollo Web</option>
+                            <option value="aplicacion-movil">Aplicación Móvil</option>
+                            <option value="cloud">Soluciones Cloud</option>
+                            <option value="automatizacion">Automatización</option>
+                            <option value="consultoria">Consultoría</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+
+                    <!-- TEXTAREA DESCRIPCIÓN (MÍNIMO 20 CARACTERES) -->
+                    <div class="form-group">
+                        <label for="motivo">Descripción del Proyecto *</label>
+                        <textarea name="motivo" id="motivo" minlength="20" required
+                            placeholder="Describe brevemente tu proyecto, objetivos, timeline estimado y cualquier requisito específico..."></textarea><br>
+                        <span id="requerimiento">Mínimo 20 caracteres</span>
+                    </div>
+
+                    <!-- SELECT PRESUPUESTO -->
+                    <div class="form-group">
+                        <label for="presupuesto">Presupuesto Estimado</label>
+                        <select name="presupuesto" required>
+                            <option value="" selected>Sin presupuesto definido</option>
+                            <option value="menos-5k">Menos de 5.000€</option>
+                            <option value="5k-15k">5.000€ - 15.000€</option>
+                            <option value="15k-30k">15.000€ - 30.000€</option>
+                            <option value="30k-50k">30.000€ - 50.000€</option>
+                            <option value="mas-50k">Más de 50.000€</option>
+                        </select>
+                    </div>
+
+                    <!-- INPUT ARCHIVOS (OPCIONAL, MÚLTIPLES) -->
+                    <div class="form-group">
+                        <label for="archivos">Archivos Adjuntos</label>
+                        <input type="file" name="archivos" multiple> <br>
+                        <span id="requerimiento">Puedes adjuntar documentos, imágenes o especificaciones (máx.
+                            10MB)</span>
+                    </div>
+
+                    <!-- CHECKBOX POLÍTICA DE PRIVACIDAD -->
+                    <div class="form-group">
+                        <input type="checkbox" name="privacidad" required>
+                        <label for="privacidad">
+                            He leído y acepto la <a href="#" target="_blank">Política de Privacidad</a> *
+                        </label>
+                    </div>
+
+                    <!-- CHECKBOX NEWSLETTER -->
+                    <div class="form-group">
+                        <input type="checkbox" name="newsletter">
+                        <label for="newsletter">
+                            Deseo recibir información sobre novedades, ofertas y consejos tecnológicos
+                        </label>
+                    </div>
+
+                    <!-- BOTÓN ENVIAR (SUBMIT) -->
+                    <button type="submit" class="btn-enviar">Enviar</button>
+                </form>
+            </section>
+
+            <!-- INFO DE CONTACTO -->
+            <aside class="info-contacto">
+                <div class="info-card">
+                    <h3>📞 Contacto Directo</h3>
+                    <div class="contacto-item">
+                        <span>🪪</span>
+                        <div>
+                            <strong>Email</strong>
+                            <p>info@novatechsolutions.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-item">
+                        <span>📱</span>
+                        <div>
+                            <strong>Teléfono</strong>
+                            <p>+34 910 000 000</p>
+                        </div>
+                    </div>
+
+                    <div class="contacto-item">
+                        <span>📍</span>
+                        <div>
+                            <strong>Oficina Central</strong>
+                            <p>Calle Tecnología 123, 28013 Madrid</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <h3>⏱️ Horario de Atención</h3>
+                    <p><strong>Lunes a Viernes:</strong> 9:00 - 18:00</p>
+                    <p><strong>Sábados:</strong> 10:00 - 14:00</p>
+                    <p><strong>Urgencias:</strong> Disponible 24/7 para clientes</p>
+                </div>
+
+                <div class="info-card">
+                    <h3>💡 ¿Por qué elegirnos?</h3>
+                    <ul>
+                        <li>Respuesta en menos de 24h</li>
+                        <li>Análisis gratuito de tu proyecto</li>
+                        <li>Presupuesto sin compromiso</li>
+                        <li>Equipo certificado y experimentado</li>
+                        <li>Soporte técnico continuo</li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+
+        <!-- PROCESO DE CONTACTO -->
+        <section class="proceso-contacto">
+            <h2>Nuestro Proceso de Contacto</h2>
+            <div class="pasos">
+                <div class="paso">
+                    <span class="numero">1</span>
+                    <h3>Envío del Formulario</h3>
+                    <p>Completa todos los campos con los detalles de tu proyecto.</p>
+                </div>
+
+                <div class="paso">
+                    <span class="numero">2</span>
+                    <h3>Análisis Inicial</h3>
+                    <p>Nuestro equipo revisa tu consulta y asigna un especialista.</p>
+                </div>
+
+                <div class="paso">
+                    <span class="numero">3</span>
+                    <h3>Contacto Personalizado</h3>
+                    <p>Te llamamos o escribimos para profundizar en tus necesidades.</p>
+                </div>
+
+                <div class="paso">
+                    <span class="numero">4</span>
+                    <h3>Propuesta Detallada</h3>
+                    <p>Recibirás un plan de trabajo y presupuesto adaptado.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>© 2025 Consultora NovaTech Solutions. Todos los derechos reservados.</p>
+        <div>
+            <p><a href="#">Aviso Legal</a></p>
+            <p><a href="#">Terminos y Condiciones</a></p>
+            <a href="https://www.instagram.com/" class="icono-footer"><img src="img/logo_ig.png" alt="Instagram"></a>
+            <a href="https://es-es.facebook.com/" class="icono-footer"><img src="img/logo_face.png" alt="Facebook"></a>
+            <a href="https://twitter.com/" class="icono-footer"><img src="img/logo_x.png" alt="X"></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>
