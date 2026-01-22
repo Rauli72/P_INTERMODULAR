@@ -2,6 +2,7 @@
 :root{
     --color_principal: #2563EB;
     --color_secundario: white;
+    --color_hover_nav: #366ee9;
 }
 
 /* RESET */
@@ -86,16 +87,17 @@ nav a:hover {
     text-align: center;
 }
 
-.hero-content input[type="button"] {
+.hero-content a {
     margin-top: 2rem;
     padding: 0.8rem;
     font-size: 1rem;
     border: none;
     border-radius: 8px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: var(--color_secundario);
 }
 
-.hero-content input[type="button"]:hover {
+.hero-content a:hover {
     background: var(--color_hover_nav);
     transform: translateZ(-1rem) scale(1.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;

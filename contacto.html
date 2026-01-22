@@ -58,7 +58,7 @@
                     <!-- CAMPO EMPRESA -->
                     <div class="form-group">
                         <label for="empresa">Empresa</label>
-                        <input type="text" name="empresa" id="empresa" required placeholder="Nombre de tu empresa">
+                        <input type="text" name="empresa" id="empresa" placeholder="Nombre de tu empresa">
                     </div>
 
                     <!-- CAMPO EMAIL -->
@@ -70,8 +70,8 @@
 
                     <!-- CAMPO TELÉFONO -->
                     <div class="form-group">
-                        <label for="telefono">Teléfono</label>
-                        <input type="tel" name="telefono" id="telefono" required placeholder="+34 600 000 000">
+                        <label for="telefono">Teléfono *</label>
+                        <input type="tel" name="telefono" id="telefono" maxlength="12" required placeholder="+34 600 000 000">
                     </div>
 
                     <!-- SELECT TIPO DE PROYECTO -->
@@ -99,7 +99,7 @@
                     <!-- SELECT PRESUPUESTO -->
                     <div class="form-group">
                         <label for="presupuesto">Presupuesto Estimado</label>
-                        <select name="presupuesto" required>
+                        <select name="presupuesto">
                             <option value="" selected>Sin presupuesto definido</option>
                             <option value="menos-5k">Menos de 5.000€</option>
                             <option value="5k-15k">5.000€ - 15.000€</option>
