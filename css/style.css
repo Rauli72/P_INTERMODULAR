@@ -908,3 +908,41 @@ footer div {
         text-align: center;
     }
 }
+
+/* EXTRA */
+@media print {
+    * {
+        color: #000 !important;
+        background: #fff !important;
+        background-color: #fff !important;
+        /* Eliminar sombras y efectos innecesarios */
+        box-shadow: none !important;
+        text-shadow: none !important;
+        border-color: #000 !important;
+    }
+
+    nav, footer, img, header, nav, footer, aside, .button, .hero-content a{
+        display: none;
+    }
+
+    main{
+        width: 100vw !important;
+        max-width: 100dvw;
+    }
+
+    .tabla-cronologia {
+        width: 100vw !important;
+        max-width: 100dvw;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    &::after {
+        content: "Página creada por: raucaymac@alu.edu.gva.es";
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
